@@ -1,5 +1,5 @@
 <?php
-Access-Control-Allow-Origin: https://steveeecsrubin.github.io
+header('Access-Control-Allow-Origin: *');
 if (isset ($_POST['email'])) {
     
     $typeOfGarment = implode(', ', $_POST['typeOfGarment']);
